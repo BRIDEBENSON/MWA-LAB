@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket Booking </title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="_index.html">Home</a></li>
+            <li><a href="_ticket_booking.html">Book Tickets</a></li>
+            <li><a href="_about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="Banner">
+        <img src="https://images.squarespace-cdn.com/content/v1/59ba9e8b46c3c4ce189af2a9/4c2a52eb-89fb-438b-a84c-99337bc5bbb0/Website+Banner+Tickets.png" width="1350" height="200" alt="banner image">
+    </div>
+    <div class="Form">
+        <h1>Please fill in the form with your details and preferences to get registered and we'll get back to you asap</h1>
+        <form action="_confirmation_page.html">
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" name="dob"><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio" id="male" name="male" value="male">Male <br>
+            <input type="radio" id="female" name="female" value="female">Female <br>
+            <label for="address">Address</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            
+            <label for="flocation">Choose your starting location:</label>
+            <select id="flocation" name="flocation">
+                <option value="">start location</option>
+                <option value="floc1">Fort Kochi</option>
+                <option value="floc2">Kakkanad</option>
+                <option value="floc3">Edapally</option>
+                <option value="floc4">Aluva</option>
+            </select>
+            <br><br>
+            <label for="dlocation">Choose your destination:</label>
+            <select id="dlocation" name="dlocation">
+                <option value="">destination</option>
+                <option value="dloc1">Fort Kochi</option>
+                <option value="dloc2">Kakkanad</option>
+                <option value="dloc3">Edapally</option>
+                <option value="dloc4">Aluva</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <footer>
+        <p> &copy;2024 Online Ticket Booking</p>
+    </footer>
+</body>
+</html>
