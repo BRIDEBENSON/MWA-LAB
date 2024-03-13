@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript code for finding the sum and performing bubble sort</title>
+</head>
+<body>
+    <script>
+        function findsum(arr)
+        {
+            let sum=0;
+            for(let i=0;i<arr.length;i++)
+            {
+                sum+=arr[i];
+            }
+            return sum;
+        }
+        function bubblesort(arr)
+        {
+            let len=arr.length;
+            for(let i=0;i<len-1;i++)
+            {
+                for(let j=0;j<len-1;j++)
+                {
+                    if(arr[j]>arr[j+1])
+                    {
+                        let temp=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        let num=[7,5,3,1];
+        alert("the array elements are: "+ num)
+        let sum=findsum(num);
+        alert("The sum of the array elements are: "+ sum)
+        let sortedarr=bubblesort(num.slice());
+        alert("the sorted array is: "+ sortedarr)
+    </script>
+</body>
+</html>
