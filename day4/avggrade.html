@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate average grade using javascript</title>
+</head>
+<body>
+    <script>
+        function calculategrade()
+        {
+            let totstud=parseInt(prompt("Enter the total no of students"))
+            let totmarks=0;
+            for(let i=0; i<totstud;i++)
+            {
+                let indmark=parseFloat(prompt("Enter the mark of student"+(i+1)+": "))
+                totmarks+=indmark;
+                document.write("<br><br>the mark of "+(i+1)+"th student is: "+indmark);
+                if(indmark>90)
+                document.write("<br>the grade of the student is: A+");
+            else if(indmark>80)
+                document.write("<br>the grade of the student is: A");
+            else if(indmark>70)
+                document.write("<br>the grade of the student is: B+");
+            else if(InputDeviceInfo>60)
+                document.write("<br>the grade of the student is: B");
+            else if(indmark>50)
+                document.write("<br>the grade of the student is: C+");
+            else if(indmark>40)
+                document.write("<br>the grade of the student is: C");
+            else if(indmark>30)
+                document.write("<br>the grade of the student is: D");
+            else if(indmark>20)
+                document.write("<br>the grade of the student is: E");
+            else if(indmark>10)
+                document.write("<br>the grade of the student is: F");
+            }
+            document.write("<br>")
+            let avgmark=totmarks/totstud;
+            document.write("<br>The average mark of the class is: "+avgmark.toFixed(2)+"<br>");
+            if(avgmark>90)
+                document.write("The average grade of the class is A+");
+            else if(avgmark>80)
+                document.write("The average grade of the class is A");
+            else if(avgmark>70)
+                document.write("The average grade of the class is B+");
+            else if(avgmark>60)
+                document.write("The average grade of the class is B");
+            else if(avgmark>50)
+                document.write("The average grade of the class is C+");
+            else if(avgmark>40)
+                document.write("The average grade of the class is C");
+            else if(avgmark>30)
+                document.write("The average grade of the class is D");
+            else if(avgmark>20)
+                document.write("The average grade of the class is E");
+            else if(avgmark>10)
+                document.write("The average grade of the class is F");
+        }
+        calculategrade();
+    </script>
+</body>
+</html>
