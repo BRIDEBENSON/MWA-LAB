@@ -4,6 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            background-color: white;
+            padding: 20px 20px 20px 20px;
+            border-radius: 10px 10px 10px 10px;
+            width: 100%;
+            margin: auto;
+        }
+
+        form h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px 20px 20px 20px;
+            border-radius: 10px 10px 10px 10px;
+            width: 50%;
+            margin: auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        form button[type="reset"] {
+            background-color: #6c757d;
+            margin-left: 10px;
+        }
+    </style>
     <title>Online Ticket Booking </title>
 </head>
 <body>
@@ -14,8 +73,8 @@
             <li><a href="_about_us.html">About Us</a></li>
         </ul>
     </nav>
-    <div class="Banner">
-        <img src="https://images.squarespace-cdn.com/content/v1/59ba9e8b46c3c4ce189af2a9/4c2a52eb-89fb-438b-a84c-99337bc5bbb0/Website+Banner+Tickets.png" width="1350" height="200" alt="banner image">
+    <div class="Banner" style="width: 100%; overflow: hidden;">
+        <img src="https://images.squarespace-cdn.com/content/v1/59ba9e8b46c3c4ce189af2a9/4c2a52eb-89fb-438b-a84c-99337bc5bbb0/Website+Banner+Tickets.png" style="width: 100%; height: auto; display: block;" alt="banner image" alt="banner image">
     </div>
     <div class="Form">
         <h1>Please fill in the form with your details and preferences to get registered and we'll get back to you asap</h1>
@@ -28,7 +87,7 @@
             <input type="date" id="dob" name="dob"><br>
             <label for="gender">Gender</label><br>
             <input type="radio" id="male" name="male" value="male">Male <br>
-            <input type="radio" id="female" name="female" value="female">Female <br>
+            <input type="radio" id="female" name="female" value="female">Female <br><br>
             <label for="address">Address</label><br>
             <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
             
@@ -50,12 +109,15 @@
                 <option value="dloc4">Aluva</option>
             </select>
             <br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
         </form>
     </div>
-    <footer>
-        <p> &copy;2024 Online Ticket Booking</p>
-    </footer>
+    <footer style=" bottom: 0; left: 0; width: 100%; text-align: center; padding: 10px;">
+        <p style="margin: 0;">&copy;2024 Online Ticket Booking</p>
 </body>
 </html>
